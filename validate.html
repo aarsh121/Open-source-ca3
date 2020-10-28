@@ -1,0 +1,28 @@
+<html>
+<head>
+<link rel="stylesheet" href="stylevalidate.css">
+</head>
+
+<body>
+<form onsubmit="return pas()">
+<h4>Enter Password to see the list:</h4>
+<input type="password" id="pa">
+<input type="submit" onclick="pas()">
+</form>
+
+<script type="text/javascript">
+function pas() {
+        var a=document.getElementById("pa").value;
+        if(a=="12345"){
+                open("showlist1.php");
+                return true;
+                }
+        else{
+                window.alert("Enter correct password");
+                return false;
+
+                }
+}
+</script>
+</body>
+</html>
